@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  background-color: hsl(0, 0%, 12%);
+  width: 480px;
+  height: 780px;
+  margin-top: 70px;
+  border-radius: 20px;
+}
+
+img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  max-width: 100%;
+  width: 150px;
+}
+
+h1 {
+  font-family: "Inter";
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 30px;
+}
+
+h2 {
+  color: hsl(75, 94%, 57%);
+  font-family: "Inter";
+  text-align: center;
+  font-size: 16px;
+}
+
+p {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  text-align: center;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 30px 50px 30px 50px;
+}
+
+button[type="submit"] {
+  padding: 15px 10px 15px 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 20%);
+  border: 1px transparent;
+  color: hsl(0, 0%, 100%);
+  font-style: "Inter";
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+  font-family: "Inter";
+  margin-top: 70px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+a {
+  color: hsl(75, 94%, 57%);
+}
+
+@media only screen and (max-width: 600px) {
+  .profile {
+    width: 400px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .profile {
+    width: 300px;
+  }
+}
